@@ -1,170 +1,61 @@
-<!DOCTYPE html>
 <html>
 <head>
-         <style> 
-            body {
-	font-family: Arial, sans-serif;
-	color: #333333;
-	background-color: #f5f5f5;
-}
-
-header {
-	text-align: center;
-	background-color: #ffffff;
-	border-bottom: 1px solid #dddddd;
-}
-
-header h1 {
-	margin: 0;
-	padding: 20px 0;
-	font-size: 32px;
-	font-weight: normal;
-	text-transform: uppercase;
-}
-
-header img {
-	display: block;
-	margin: 0 auto;
-	border: 1px solid #dddddd;
-	border-radius: 50%;
-	max-width: 200px;
-}
-
-header p {
-	margin: 10px 0;
-	font-size: 18px;
-	font-weight: bold;
-	text-align: center;
-}
-
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #333333;
-	color: #ffffff;
-}
-
-nav ul {
-	display: flex;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-nav li {
-	margin: 0 10px;
-}
-
-nav a {
-	color: #ffffff;
-	text-decoration: none;
-}
-
-nav a:hover {
-	color: #dddddd;
-}
-
-main {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 20px;
-}
-
-main h2 {
-	margin: 20px 0;
-	font-size: 24px;
-	font-weight: normal;
-}
-
-main ol {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-main li {
-	margin: 10px 0;
-	font-size: 18px;
-}
-
-main form {
-	display: flex;
-	flex-direction: column;
-}
-
-main label {
-	margin: 10px 0;
-	font-size: 18px;
-}
-
-main input[type="text"],
-main input[type="number"],
-main input[type="email"],
-main input[type="file"] {
-	padding: 10px;
-	font-size: 16px;
-	border: 1px solid #dddddd;
-	border-radius: 4px;
-}
-
-main input[type="submit"] {
-	margin: 20px 0;
-	padding: 10px 20px;
-	font-size: 18px;
-	background-color: #333333;
-	color: #ffffff;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-}
-
-main input[type="submit"]:hover {
-	background-color: #dddddd;
-	color: #333333;
-}
- 
-         </style>
-	<title>Best Looking Man in Illinois Contest</title>
+  <title>The Great Illinois Hot Man Contest</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    h1, h2 {
+      color: #ff0000;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    form {
+      max-width: 300px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    input[type="text"], input[type="email"], input[type="number"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      width: 100%;
+      background-color: #4caf50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
-	<header>
-		<h1>Best Looking Man in Illinois Contest</h1>
-		<img src="payton.jpg" alt="Payton Schippel, 2022 winner for best looking man in Illinois">
-		<p>Payton Schippel, 2022 winner for best looking man in Illinois</p>
-	</header>
-	<nav>
-		<ul>
-			<li><a href="#intro">Introduction</a></li>
-			<li><a href="#rules">Rules</a></li>
-			<li><a href="#entry">Entry Form</a></li>
-			<li><a href="#winners">Past Winners</a></li>
-		</ul>
-	</nav>
-	<main>
-		<section id="intro">
-			<h2>Introduction</h2>
-			<p>Welcome to the Best Looking Man in Illinois Contest! This annual event recognizes the most handsome and attractive men in the state. If you think you have what it takes to be the next Best Looking Man in Illinois, read on to learn more about the contest and how to enter.</p>
-		</section>
-		<section id="rules">
-			<h2>Rules</h2>
-			<ol>
-				<li>Contestants must be male and at least 18 years old.</li>
-				<li>Contestants must be legal residents of Illinois.</li>
-				<li>Contestants must submit a recent photograph of themselves along with their entry form.</li>
-				<li>A panel of judges will select the top 10 finalists based on the photographs submitted.</li>
-				<li>The top 10 finalists will be invited to a live event where they will be judged on their appearance, personality, and public speaking skills.</li>
-				<li>The winner will be chosen by the judges and announced at the live event.</li>
-			</ol>
-		</section>
-		<section id="entry">
-			<h2>Entry Form</h2>
-			<p>To enter the contest, please complete the form below and attach a recent photograph of yourself. The entry fee is $50. Payment can be made through PayPal or by mailing a check or money order to the address provided on the form.</p>
-			<form action="/submit-entry" method="post">
-				<label for="name">Name:</label><br>
-				<input type="text" id="name" name="name"><br>
-				<label for="age">Age:</label><br>
-				<input type="number" id="age" name="age"><br>
-				<label for="email">Email:</label><br>
-				<input type="email" id="email" name="email"><br>
-				<label for="photo">
+  <h1>The Great Illinois Hot Man Contest</h1>
+  <h2>Who will be crowned the hottest man in the Land of Lincoln?</h2>
+  <p>Are you a handsome hunk living in Illinois? Do you have a chiseled jawline and piercing blue eyes? Do women (and men) swoon at the sight of you? Then you might just have what it takes to win the title of Illinois' Hottest Man!</p>
+  <p>The contest will be held at the annual Illinois State Fair, where a panel of judges will evaluate each contestant based on looks, charisma, and overall sex appeal. The winner will receive a trophy and a year's supply of hair gel (because let's be real, they'll need it).</p>
+  <p>But watch out, because the current champion is Payton Schippel, a smoldering stud from the Windy City who has held the title for three years running. Check out this photo of Payton in all his hot glory:</p>
+  <img src="payton.jpg" alt="Payton Schippel, current champion of The Great Illinois Hot Man Contest">
+  <p>Can you dethrone him and become the new hottest man in Illinois?</p>
+  <p>So if you think you have what it takes to be the top dog in the Land of Lincoln, sign up now! Or if you just want to ogle some hot men, come on down and cheer on your favorite contestant.</p>
+  <h2>Sign-Up Form</h2>
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="age">Age:</label><br>
