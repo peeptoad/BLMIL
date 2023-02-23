@@ -1,61 +1,42 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <title>The Great Illinois Hot Man Contest</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 600px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    h1, h2 {
-      color: #ff0000;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-    form {
-      max-width: 300px;
-      margin: 0 auto;
-      text-align: left;
-    }
-    input[type="text"], input[type="email"], input[type="number"] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      box-sizing: border-box;
-      border: 2px solid #ccc;
-      border-radius: 4px;
-    }
-    input[type="submit"] {
-      width: 100%;
-      background-color: #4caf50;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    input[type="submit"]:hover {
-      background-color: #45a049;
-    }
-  </style>
-</head>
-<body>
-  <h1>The Great Illinois Hot Man Contest</h1>
-  <h2>Who will be crowned the hottest man in the Land of Lincoln?</h2>
-  <p>Are you a handsome hunk living in Illinois? Do you have a chiseled jawline and piercing blue eyes? Do women (and men) swoon at the sight of you? Then you might just have what it takes to win the title of Illinois' Hottest Man!</p>
-  <p>The contest will be held at the annual Illinois State Fair, where a panel of judges will evaluate each contestant based on looks, charisma, and overall sex appeal. The winner will receive a trophy and a year's supply of hair gel (because let's be real, they'll need it).</p>
-  <p>But watch out, because the current champion is Payton Schippel, a smoldering stud from the Windy City who has held the title for three years running. Check out this photo of Payton in all his hot glory:</p>
-  <img src="payton.jpg" alt="Payton Schippel, current champion of The Great Illinois Hot Man Contest">
-  <p>Can you dethrone him and become the new hottest man in Illinois?</p>
-  <p>So if you think you have what it takes to be the top dog in the Land of Lincoln, sign up now! Or if you just want to ogle some hot men, come on down and cheer on your favorite contestant.</p>
-  <h2>Sign-Up Form</h2>
-  <form>
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name"><br>
-    <label for="age">Age:</label><br>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Receipt</title>
+  </head>
+  <body>
+    <label for="item-select">Choose an item:</label>
+    <select id="item-select" name="item">
+      <option value="option1" data-price="10.99">Option 1 - $10.99</option>
+      <option value="option2" data-price="8.49">Option 2 - $8.49</option>
+      <option value="option3" data-price="5.99">Option 3 - $5.99</option>
+    </select>
+
+    <label for="quantity-input">Quantity:</label>
+    <input type="number" id="quantity-input" name="quantity" min="1" max="10" value="1">
+
+    <button id="add-to-cart-button">Add to cart</button>
+    <button id="clear-button">Clear</button>
+    <button id="save-button">Save</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="receipt-items"></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total price:</td>
+          <td id="total-price">$0.00</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <script src="receipt.js"></script>
+  </body>
+</html>
